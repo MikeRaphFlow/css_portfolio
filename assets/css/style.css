@@ -1,0 +1,227 @@
+body {
+    box-sizing: border-box;
+    font-family: monospace;
+    background-color: #FFFFFF;
+    font-size: large;
+    color: #4756df;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    height: 60px;
+}
+
+.yoyo {
+    height: 100px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    flex-basis: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+ul {
+    display: flex;
+    font-size: 1rem;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4756df;
+    font-size: 20px;
+    font-weight: 90;
+}
+
+li:hover {
+    color: blueviolet;
+}
+
+#caratula {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+    padding: 20px;
+    max-width: 85rem;
+}
+
+.sobremi {
+    flex-basis: 1;
+    text-align: left;
+    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: #fcfcfc;
+}
+
+.agua {
+    flex-basis: 1;
+}
+
+.textosobremi {
+    display: flex;
+    /* Aplicamos display: flex para alinear verticalmente */
+    align-items: center;
+    /* Alineamos verticalmente los elementos */
+    justify-content: center;
+    /* Alineamos horizontalmente los elementos */
+    text-align: center;
+}
+
+.play {
+    float: right;
+    height: 40px;
+    border-radius: 80%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.burger {
+    display: inline;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.laburos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 90vw;
+}
+
+.expe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 10px;
+    padding: 20px;
+    width: 640px;
+}
+
+.xp {
+    text-align: left;
+    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    width: 640px;
+    border-radius: 15px;
+    background-color: #fcfcfc;
+}
+
+h3 {
+    display: flex;
+    /* Aplicamos display: flex para alinear verticalmente */
+    align-items: center;
+    /* Alineamos verticalmente los elementos */
+    justify-content: space-between;
+    /* Alineamos horizontalmente los elementos */
+    text-align: center;
+}
+
+.imglab {
+    height: 50px;
+}
+
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.titulomila {
+    text-align: center;
+}
+
+.mila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 10px;
+    background-color: #fcfcfc;
+}
+
+.imgmila {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wassap {
+    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    background-color: #fcfcfc;
+}
+
+footer {
+    background-color: #66BFBF;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fcfcfc;
+}
+
+@media (max-width: 760px) {
+    nav {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 190px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .yoyo {
+        height: 75px;
+    }
+    .agua,
+    .xp,
+    .expe {
+        width: 70vw;
+    }
+    .proyectos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1200px) {
+    #caratula {
+        flex-direction: column;
+    }
+}
